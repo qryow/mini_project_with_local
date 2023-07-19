@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+<body>
+    <div class="btn-group" role="group" aria-label="Basic example">
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">ADD</button>
+    </div>
+
+
+    <!--content start -->
+    <div class="container d-flex justify-content-center flex-wrap"></div>
+
+
+    <!-- inputs -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"    aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="staticBackdropLabel">Add product form</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body d-flex flex-column w-100 align-items-center">
+            <input type="text" placeholder="Enter your name" id="name-inp" class="mb-2 w100 form-control">
+            <input type="text" placeholder="Enter your lastname" id="lastname-inp" class="mb-2 w100 form-control">
+            <input type="text" placeholder="Enter your phone number" id="number-inp" class="mb-2 w100 form-control">
+            <input type="url" placeholder="Product img url" id="img-inp" class="mb-2 w100 form-control">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-dark send-btn">Send</button>
+
+            <button type="button" class="btn btn-secondary save-btn">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
